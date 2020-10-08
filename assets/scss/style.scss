@@ -1,0 +1,181 @@
+$icon-size: 50px;
+$dark-overlay: rgba(0, 0, 0, 0.7);
+
+.navbar {
+    background: #000;
+
+    .nav-item {
+        padding-left: 1em;
+
+        .nav-link {
+            text-transform: uppercase;
+        }
+    }
+
+}
+
+.carousel-item {
+    height: 450px;
+}
+
+.crsl-img-1 {
+    background: url(../img/slider-bg-1.jpg);
+    background-size: cover;
+}
+
+.crsl-img-2 {
+    background: url(../img/image1.jpeg);
+    background-size: cover;
+    background-position-y: center;
+}
+
+.crsl-img-3 {
+    background: url(../img/slider-bg-3.jpeg);
+    background-size: cover;
+}
+
+#homeicon {
+    .fa {
+        font-size: $icon-size;
+    }
+}
+
+#getstarted {
+    background: url(../img/get-started.jpg);
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 300px;
+
+    .overlay {
+        background: $dark-overlay;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+}
+
+#homeicon {
+    .fa {
+        transition: .4s;
+    }
+
+    .homeIcon1:hover .fa {
+        color: #E0A800;
+    }
+
+    .homeIcon2:hover .fa {
+        color: #2e8ccf;
+    }
+
+    .homeIcon3:hover .fa {
+        color: #36A745;
+    }
+}
+
+#home-video {
+    background: url(../img/people.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 260px;
+
+    .overlay {
+        background: $dark-overlay;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+
+        .fa {
+            font-size: $icon-size;
+            color: #ff0000;
+        }
+    }
+
+}
+
+#gallery {
+    img {
+        min-height: 250px;
+    }
+}
+
+#copyright {
+    background: #000;
+}
+
+#aboutHeader {
+    background: url('../img/image3.jpeg');
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: center;
+    min-height: 190px;
+    background-attachment: fixed;
+}
+
+#aboutInfo {
+    img {
+        width: 60%;
+
+    }
+}
+
+#iconBox {
+    .card {
+        transition: .3s;
+
+        .fa {
+            font-size: $icon-size;
+            margin-bottom: 20px;
+        }
+    }
+
+    .card:hover {
+        transform: scale(1.01);
+        box-shadow: 0px 0px 20px -5px #000;
+    }
+}
+
+#testimonial {
+    .slick-prev:before {
+        color: #000;
+    }
+
+    .slick-next:before {
+        color: #000;
+    }
+}
+
+#servicesHeader {
+    background: url('../img/image2.jpeg');
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: center;
+    min-height: 190px;
+    background-attachment: fixed;
+}
+
+@media(max-width: 480px) {
+    .carousel {
+        h2 {
+            font-size: 2.5rem;
+        }
+    }
+
+    #getstarted {
+        min-height: 400px;
+
+        p {
+            line-height: 30px;
+            margin-top: 30px;
+        }
+    }
+}
